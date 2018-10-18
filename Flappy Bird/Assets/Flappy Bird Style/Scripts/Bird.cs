@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Bird : MonoBehaviour 
 {
-	public float upForce;					//Upward force of the "flap".
+    public Image heart1, heart2, heart3;
+    public int healthpoints = 3;
+    public float upForce;					//Upward force of the "flap".
 	private bool isDead = false;			//Has the player collided with a wall?
 
 	private Animator anim;					//Reference to the Animator component.
@@ -15,6 +18,9 @@ public class Bird : MonoBehaviour
 		anim = GetComponent<Animator> ();
 		//Get and store a reference to the Rigidbody2D attached to this GameObject.
 		rb2d = GetComponent<Rigidbody2D>();
+        heart1.enabled = true;
+        heart2.enabled = true;
+        heart3.enabled = true;
 	}
 
 	void Update()
@@ -38,13 +44,44 @@ public class Bird : MonoBehaviour
 
 	void OnCollisionEnter2D(Collision2D other)
 	{
-		// Zero out the bird's velocity
-		rb2d.velocity = Vector2.zero;
-		// If the bird collides with something set it to dead...
-		isDead = true;
-		//...tell the Animator about it...
-		anim.SetTrigger ("Die");
-		//...and tell the game control about it.
-		GameControl.instance.BirdDied ();
+        
+        if (healthpoints == 3)
+        {
+            heart3.enabled = false;
+            healthpoints = 2; 
+        }
+        else if (healthpoints == 2)
+        {
+            heart2.enabled = false;
+            healthpoints = 1;
+        }
+        else
+        {
+            heart1.enabled = false;
+            healthpoints = 0;
+            // Zero out the bird's velocity
+            rb2d.velocity = Vector2.zero;
+            // If the bird collides with something set it to dead...
+            isDead = true;
+            //...tell the Animator about it...
+            anim.SetTrigger("Die");
+            //...and tell the game control about it.
+            GameControl.instance.BirdDied();
+        }
 	}
+    void OnBecameInvisible()
+    {
+
+        heart3.enabled = false;
+        heart2.enabled = false;
+        heart1.enabled = false;
+        // Zero out the bird's velocity
+        rb2d.velocity = Vector2.zero;
+        // If the bird collides with something set it to dead...
+        isDead = true;
+        //...tell the Animator about it...
+        anim.SetTrigger("Die");
+        //...and tell the game control about it.
+        GameControl.instance.BirdDied();
+    }
 }
