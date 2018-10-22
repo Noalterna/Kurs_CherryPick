@@ -30,7 +30,7 @@ public class ColumnPool : MonoBehaviour
 			//...and create the individual columns.
 			columns[i] = (GameObject)Instantiate(columnPrefab, objectPoolPosition, Quaternion.identity);
 		}
-	}
+    }
 
 
 	//This spawns columns as long as the game is not over.
