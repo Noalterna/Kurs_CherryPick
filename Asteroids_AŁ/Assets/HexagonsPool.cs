@@ -35,16 +35,16 @@ public class HexagonsPool : MonoBehaviour {
         if (previousSpawnTime >=spawnRate)
         {
             previousSpawnTime = 0f;
-            float randX = Random.Range(-11, 11);
-            float randY = Random.Range(-5, 5);
+            float randX = Random.Range(-10, 10);
+            float randY = Random.Range(-4.30f, 4.30f);
 
             hexagons[currentHexa].transform.position = new Vector2(randX, randY);
             currentHexa++;
 
-            //if (currentHexa >= hexaPoolSize)
-            //{
-            //    currentHexa = 0;
-            //}
+            if (currentHexa >= hexaPoolSize)
+            {
+                currentHexa = 0;
+            }
         }
 		
 	}

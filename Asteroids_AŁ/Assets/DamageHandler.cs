@@ -9,7 +9,7 @@ public class DamageHandler : MonoBehaviour {
 
     //if player hits the enemy he dies
     private void OnTriggerEnter2D()
-    { 
+    {
         health--;
         if (health<=0)
         {

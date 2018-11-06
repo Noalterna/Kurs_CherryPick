@@ -37,6 +37,7 @@ public class GameController : MonoBehaviour {
     }
     public void PlayerDied()
     {
+        Debug.Log("xxx");
         gameOvertext.SetActive(true);
         gameOver = true;
     }
