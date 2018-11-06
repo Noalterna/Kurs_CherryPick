@@ -6,7 +6,7 @@ public class HexagonsPool : MonoBehaviour {
 
     public GameObject hexagon;
     public int hexaPoolSize = 15;
-    public float spawnRate = 2f;
+    public float spawnRate = 1f;
 
     private GameObject[] hexagons;
     private int currentHexa = 0;
@@ -46,6 +46,5 @@ public class HexagonsPool : MonoBehaviour {
                 currentHexa = 0;
             }
         }
-		
 	}
 }

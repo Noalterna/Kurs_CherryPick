@@ -24,7 +24,8 @@ GameObject:
   - component: {fileID: 50066753071688456}
   - component: {fileID: 61975201139667820}
   - component: {fileID: 114526072182032630}
-  m_Layer: 0
+  - component: {fileID: 114523114797728862}
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4358294785478624}
   - component: {fileID: 212964006539614870}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ship1-flame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +57,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4166375114415304}
   - component: {fileID: 212087757653919238}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ship1-lines
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,6 +150,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.49, y: 0.46}
   m_EdgeRadius: 0
+--- !u!114 &114523114797728862
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1211782314672892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a417bda7e886ca943bce5d6e84647d93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireballPrefab: {fileID: 1351333135003504, guid: 4e6d0f14169e0ca41b340140705fad94,
+    type: 2}
 --- !u!114 &114526072182032630
 MonoBehaviour:
   m_ObjectHideFlags: 1

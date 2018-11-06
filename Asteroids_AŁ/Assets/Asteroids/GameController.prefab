@@ -52,9 +52,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 414fdca99b0793f4f91dc99c28909879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hexagon: {fileID: 1470594248698936, guid: a441a9e6198edba41aa05db2d54c4962, type: 2}
+  hexagon: {fileID: 1992087555335074, guid: ed15c325b5b111a428aaf1cd57c129de, type: 2}
   hexaPoolSize: 15
-  spawnRate: 0.3
+  spawnRate: 1
 --- !u!114 &114199437350051210
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -66,6 +66,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1b1f868394865948a8470f28375aaa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
-  gameOvertext: {fileID: 0}
+  scoreText: {fileID: 114714863706917780, guid: f18ec99ed7641b0478cfa8eafdaa771c,
+    type: 2}
+  gameOvertext: {fileID: 1813567835024120, guid: a11fa06699cec2c4394024fbbbf53f49,
+    type: 2}
   gameOver: 0
