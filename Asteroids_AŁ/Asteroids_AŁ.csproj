@@ -306,15 +306,16 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DamageHandlerEnemy.cs" />
-    <Compile Include="Assets\DamageHandlerFireball.cs" />
-    <Compile Include="Assets\DamageHandlerPlayer.cs" />
-    <Compile Include="Assets\GameController.cs" />
-    <Compile Include="Assets\Hexagon.cs" />
-    <Compile Include="Assets\HexagonsPool.cs" />
-    <Compile Include="Assets\MoveFireball.cs" />
-    <Compile Include="Assets\PlayerMovement.cs" />
-    <Compile Include="Assets\PlayerShooting.cs" />
+    <Compile Include="Assets\Asteroids\Scripts\DamageHandlerEnemy.cs" />
+    <Compile Include="Assets\Asteroids\Scripts\DamageHandlerFireball.cs" />
+    <Compile Include="Assets\Asteroids\Scripts\DamageHandlerPlayer.cs" />
+    <Compile Include="Assets\Asteroids\Scripts\GameController.cs" />
+    <Compile Include="Assets\Asteroids\Scripts\Hexagon.cs" />
+    <Compile Include="Assets\Asteroids\Scripts\HexagonMovement.cs" />
+    <Compile Include="Assets\Asteroids\Scripts\HexagonsPool.cs" />
+    <Compile Include="Assets\Asteroids\Scripts\MoveFireball.cs" />
+    <Compile Include="Assets\Asteroids\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Asteroids\Scripts\PlayerShooting.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Styles\Main_Dark.uss" />
