@@ -306,6 +306,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\DamageHandler.cs" />
+    <Compile Include="Assets\GameController.cs" />
+    <Compile Include="Assets\Hexagon.cs" />
+    <Compile Include="Assets\HexagonsPool.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
   </ItemGroup>
   <ItemGroup>
