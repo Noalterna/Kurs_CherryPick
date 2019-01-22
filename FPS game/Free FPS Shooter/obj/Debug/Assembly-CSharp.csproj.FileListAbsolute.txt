@@ -1,0 +1,2 @@
+D:\kurs_cherrypick\asteroids\FPS game\Free FPS Shooter\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+D:\kurs_cherrypick\asteroids\FPS game\Free FPS Shooter\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
